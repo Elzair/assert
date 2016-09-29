@@ -5,7 +5,6 @@ project(boost_assert)
 add_library(boost_assert INTERFACE)
 
 target_include_directories(boost_assert BEFORE INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/include)
-target_link_libraries(boost_assert PUBLIC boost_config)
 
 install(TARGETS boost_assert DESTINATION lib)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/boost DESTINATION include)
